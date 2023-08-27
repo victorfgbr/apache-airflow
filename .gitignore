@@ -1,5 +1,7 @@
 # Apache Airflow
 airflow.db
+logs/
+*.pid
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
