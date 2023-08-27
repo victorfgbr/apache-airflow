@@ -16,14 +16,12 @@ default_args = {
 }
 
 dag = DAG(
-    dag_id='save_date_in_file_txt',
-    schedule="0 0 * * *",
-    default_args=default_args,
-    schedule_interval=timedelta(days=1),
+    dag_id='print_date_file',
     start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
     catchup=False,
+    schedule=None,
     dagrun_timeout=timedelta(minutes=60),
-    tags=['print_date_file']
+    tags=['print_example']
 )
 
 # Imprime a data na saída padrão.
@@ -60,6 +58,5 @@ t4 = BashOperator(
 t1 >> t2 >> t3 >> t4 
 
 if __name__ == "__main__":
-
     dag.test()
 
