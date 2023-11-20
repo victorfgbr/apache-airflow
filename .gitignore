@@ -1,5 +1,6 @@
 # Apache Airflow
 airflow.db
+airflow.db-journal
 logs/
 *.pid
 
