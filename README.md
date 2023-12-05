@@ -1,9 +1,9 @@
 # apache-airflow
 
 #### Para atiar o venv (mantém as bibliotecas do python em um ambiente virtual)
-python3 -m venv .venv
-source .venv/bin/activate
-pip install apache-airflow
+- python3 -m venv .venv
+- source .venv/bin/activate
+- pip install apache-airflow
 
 #### Exportar path do airflow
 export AIRFLOW_HOME=$PWD
